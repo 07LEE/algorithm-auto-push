@@ -1,4 +1,4 @@
 def solution(s):
-    a = list(map(int, s.split()))
-    answer = '%d %d'%(min(a), max(a))
+    s_list = sorted(list(map(int, s.split())))
+    answer = str(s_list[0]) +' '+ str(s_list[-1])
     return answer
