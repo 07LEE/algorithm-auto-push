@@ -1,2 +1,11 @@
 def solution(angle):
-    return 1 if angle < 90 else 2 if angle == 90 else 3 if angle < 180 else 4
+    if angle == 180 :
+        answer = 4
+    elif 90 < angle < 180 :
+        answer = 3
+    elif angle == 90:
+        answer = 2 
+    else:
+        answer = 1
+
+    return answer
