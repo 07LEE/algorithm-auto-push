@@ -1,3 +1,5 @@
 def solution(s):
-    answer = sorted(list(s), reverse=True)
-    return ''.join(answer)
+    answer = ''
+    for i in sorted(s, reverse = True):
+        answer += i
+    return answer
