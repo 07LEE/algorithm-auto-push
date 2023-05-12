@@ -1,2 +1,6 @@
 def solution(s):
-    return s[int(len(s)/2)] if len(s)%2 != 0 else s[int(len(s)/2)-1:int(len(s)/2)+1]
+    if len(s)%2 == 0:
+        answer = s[(len(s)//2)-1:(len(s)//2)+1]
+    else :
+        answer = s[(len(s)//2)]
+    return answer
