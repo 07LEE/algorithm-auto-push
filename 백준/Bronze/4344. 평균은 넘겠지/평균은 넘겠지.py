@@ -1,10 +1,13 @@
-c = int(input())
-for i in range(c):
+def roundTraditional(val, digits):
+    return round(val+10**(-len(str(val))-1), digits)
+
+for _ in range(int(input())):
+    c = list(map(int, input().split()))
+    avg = sum(c[1:])/c[0]
     cnt = 0
-    data = list(input().split())
-    n = int(data[0])
-    a = sum(map(int, data[1:]))/n
-    for j in map(int, data[1:]):
-        if j > a :
-           cnt += 1
-    print(f'{cnt/n*100:.3f}%')
+    for i in c[1:]:
+        if i > avg:
+            cnt += 1
+    rate = roundTraditional(cnt/c[0] *100, 3)
+    
+    print(f'{rate:.3f}%')
