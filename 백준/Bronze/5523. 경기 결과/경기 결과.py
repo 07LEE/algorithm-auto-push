@@ -6,6 +6,4 @@ for _ in range(t):
         A += 1
     elif b > a:
         B += 1
-    else:
-        pass
 print(A, B)
