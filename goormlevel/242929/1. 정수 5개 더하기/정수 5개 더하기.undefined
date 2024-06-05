@@ -1,0 +1,4 @@
+# -*- coding: utf-8 -*-
+# UTF-8 encoding when using korean
+N = sum(map(int, input().split()))
+print (N)
